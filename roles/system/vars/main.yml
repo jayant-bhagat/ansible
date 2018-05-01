@@ -1,0 +1,4 @@
+---
+# vars file for system
+home_dir: /home/nmg/mysql
+mode: 777

@@ -1,0 +1,8 @@
+---
+- apt_repository: repo='ppa:rabbitvcs/ppa' state=present
+  register: ppastable
+- name: downloading google-chrom-stable
+  get_url: 
+     url: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+     dest: "{{home_dir}}"
+     mode: 755

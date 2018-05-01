@@ -1,0 +1,12 @@
+---
+- name: installing chrome 
+  apt: "deb={{home_dir}}/google-chrome-stable_current_amd64.deb"
+  become: true 
+  
+- name: updateing vcs repo
+  apt: name=$item state=latest update_cache=yes
+  with_items: 
+        - rabbitvcs-cli
+        - rabbitvcs-core
+        - rabbitvcs-gedit
+        - rabbitvcs-nautilus3
