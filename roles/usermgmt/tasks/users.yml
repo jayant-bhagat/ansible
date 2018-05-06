@@ -1,0 +1,13 @@
+---
+- name: adding users
+  user:
+   name=kumar
+   state=present
+   groups=php
+   password="$1$CUULG7Vr$1.3qkyT0PdSdjSIT3m0UF1"
+   shell=/bin/bash
+#  with_items:
+#     - kumar
+#     - bhagat
+#  tags: add_new_user
+  

@@ -1,0 +1,5 @@
+---
+- name: add a group
+  group: name=it state=present
+- name: adding group2
+  group: name=php state=present
